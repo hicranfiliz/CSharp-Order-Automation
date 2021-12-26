@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{37E44818-1627-4088-A591-7EEEB038D1B0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Siparis_Otomasyon</RootNamespace>
+    <AssemblyName>Siparis_Otomasyon</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmDesign.cs" />
+    <Compile Include="FrmGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGuncelle.Designer.cs">
+      <DependentUpon>FrmGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIcecek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIcecek.Designer.cs">
+      <DependentUpon>FrmIcecek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKategoriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKategoriEkle.Designer.cs">
+      <DependentUpon>FrmKategoriEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKullaniciGirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKullaniciGirisi.Designer.cs">
+      <DependentUpon>FrmKullaniciGirisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKullaniciKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKullaniciKayit.Designer.cs">
+      <DependentUpon>FrmKullaniciKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMagaza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMagaza.Designer.cs">
+      <DependentUpon>FrmMagaza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAtistirmalik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAtistirmalik.Designer.cs">
+      <DependentUpon>FrmAtistirmalik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMarkaEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMarkaEkle.Designer.cs">
+      <DependentUpon>FrmMarkaEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMusteriGirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMusteriGirisi.Designer.cs">
+      <DependentUpon>FrmMusteriGirisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIlkSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIlkSayfa.Designer.cs">
+      <DependentUpon>FrmIlkSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMusteriGor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMusteriGor.Designer.cs">
+      <DependentUpon>FrmMusteriGor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMusteriKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMusteriKayit.Designer.cs">
+      <DependentUpon>FrmMusteriKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKullaniciAnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKullaniciAnaSayfa.Designer.cs">
+      <DependentUpon>FrmKullaniciAnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMusteriMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMusteriMenu.Designer.cs">
+      <DependentUpon>FrmMusteriMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSipaisBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSipaisBilgi.Designer.cs">
+      <DependentUpon>FrmSipaisBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOdemeBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOdemeBilgileri.Designer.cs">
+      <DependentUpon>FrmOdemeBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTemelGida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTemelGida.Designer.cs">
+      <DependentUpon>FrmTemelGida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUrunEklemeSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUrunEklemeSayfasi.Designer.cs">
+      <DependentUpon>FrmUrunEklemeSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUrunler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUrunler.Designer.cs">
+      <DependentUpon>FrmUrunler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sepet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sepet.Designer.cs">
+      <DependentUpon>Sepet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlBaglantisi.cs" />
+    <EmbeddedResource Include="FrmGuncelle.resx">
+      <DependentUpon>FrmGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIcecek.resx">
+      <DependentUpon>FrmIcecek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKategoriEkle.resx">
+      <DependentUpon>FrmKategoriEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKullaniciGirisi.resx">
+      <DependentUpon>FrmKullaniciGirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKullaniciKayit.resx">
+      <DependentUpon>FrmKullaniciKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMagaza.resx">
+      <DependentUpon>FrmMagaza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAtistirmalik.resx">
+      <DependentUpon>FrmAtistirmalik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMarkaEkle.resx">
+      <DependentUpon>FrmMarkaEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMusteriGirisi.resx">
+      <DependentUpon>FrmMusteriGirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIlkSayfa.resx">
+      <DependentUpon>FrmIlkSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMusteriGor.resx">
+      <DependentUpon>FrmMusteriGor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMusteriKayit.resx">
+      <DependentUpon>FrmMusteriKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKullaniciAnaSayfa.resx">
+      <DependentUpon>FrmKullaniciAnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMusteriMenu.resx">
+      <DependentUpon>FrmMusteriMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSipaisBilgi.resx">
+      <DependentUpon>FrmSipaisBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOdemeBilgileri.resx">
+      <DependentUpon>FrmOdemeBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTemelGida.resx">
+      <DependentUpon>FrmTemelGida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUrunEklemeSayfasi.resx">
+      <DependentUpon>FrmUrunEklemeSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUrunler.resx">
+      <DependentUpon>FrmUrunler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Sepet.resx">
+      <DependentUpon>Sepet.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\456212.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3329386.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adres.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adres2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sifre1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sifre2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adsoyad1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adsoyad2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firstuser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firstuser1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firstuser2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2874802.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
